@@ -7,44 +7,34 @@
 <meta name="description" content="Max Tereré — ervas selecionadas e a granel em Palmas, TO.">
 <title>Max Tereré | Cartão Digital</title>
 <style>
-:root{color-scheme:light;--green:#82bc43;--green-dark:#39762d;--orange:#ec6416;--paper:#f2f2ef;--ink:#11140f}
+:root{--paper:#f5f7ef;--green:#82bc43;--green-dark:#39762d;--orange:#ec6416;--ink:#171b14}
 *{box-sizing:border-box}
 html{min-width:280px;background:#e8e9e5}
 body{margin:0;min-height:100vh;min-height:100svh;padding:clamp(0px,3vh,28px) 12px;display:flex;align-items:center;justify-content:center;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
-.card{width:min(100%,450px);min-height:680px;background:linear-gradient(rgba(245,247,239,.38),rgba(245,247,239,.38)),url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwEWVfp9JIncEJpAGiC-efPb1CCUbTwLJ6kUoZLRL3AKEfe0_M1kYlCDf8txDesiQhwTAGOSK7CvaJLI8NGwe0jyRoEPBWHJmcRh31XV7IGo9gaKtKPyq3imbIAXSbtbgyqcnDjBaN1UNbhVE0rD1qlacw9F-ccqRfPy1POUzjLkhiXcmOWAt1DbWFvRk/s1600/370475.jpg") center/cover no-repeat;border-radius:clamp(0px,5vw,28px);overflow:hidden;box-shadow:0 18px 50px #17231424;isolation:isolate}
+.card{width:min(100%,450px);min-height:680px;border-radius:clamp(0px,5vw,28px);overflow:hidden;isolation:isolate;box-shadow:0 18px 50px #17231424;background:linear-gradient(rgba(245,247,239,.38),rgba(245,247,239,.38)),url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwEWVfp9JIncEJpAGiC-efPb1CCUbTwLJ6kUoZLRL3AKEfe0_M1kYlCDf8txDesiQhwTAGOSK7CvaJLI8NGwe0jyRoEPBWHJmcRh31XV7IGo9gaKtKPyq3imbIAXSbtbgyqcnDjBaN1UNbhVE0rD1qlacw9F-ccqRfPy1POUzjLkhiXcmOWAt1DbWFvRk/s1600/370475.jpg") center/cover no-repeat}
 .hero{height:clamp(185px,54vw,245px);position:relative;background:#384828 url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipAeZj2UcgpoQs-CKDf3-x9FyTDrxrt0Y8M8af1HbXJ27Wt9-E1ro9erYVMkSgJ_06SZfM9nfg7R_hfJUbqbDsgE1RSMtxNkjaDORApvC-3PxvxAfWpR1zpfquRN-kgPXi_tELbjX_JPkT2aRZNLZnGRyOeSPkGj4G2n-lYYvDGSNnD2jOdwZ8E0o7znQ/s1600/370186.png") center 88%/cover no-repeat;clip-path:ellipse(300% 600% at 50% -500%);filter:drop-shadow(0 9px 8px rgba(18,32,15,.28))}
-.hero:after{display:none}
 .content{position:relative;z-index:1;margin-top:clamp(-76px,-9svh,-58px);padding:0 clamp(20px,6vw,34px) 30px;text-align:center}
 .logo-holder{width:clamp(142px,39vw,174px);height:clamp(142px,39vw,174px);margin:0 auto 1px;display:grid;place-items:center;position:relative;top:-32px;overflow:hidden}
-.logo{position:absolute;left:-25%;top:-74%;display:block;width:150%;max-width:none;height:auto;object-fit:fill;transform:none;filter:drop-shadow(0 4px 3px #0002)}
+.logo{position:absolute;left:-25%;top:-74%;display:block;width:150%;max-width:none;height:auto;object-fit:fill}
 h1{font-size:clamp(17px,4.8vw,21px);line-height:1.15;letter-spacing:.12em;font-weight:900;margin:3px 0 10px}
 .tagline{margin:0 0 clamp(20px,4vh,29px);font-size:clamp(15px,4vw,18px);line-height:1.3;font-weight:800}
 .tagline span{color:var(--orange)}
 .links{display:grid;gap:clamp(12px,2.2vh,16px);width:min(100%,360px);margin:0 auto}
-.link{width:100%;aspect-ratio:697/184;position:relative;display:flex;align-items:center;overflow:hidden;padding:0 7% 0 28%;border:0;border-radius:0;background:transparent;color:#fff;text-align:left;text-decoration:none;box-shadow:none;transition:transform .16s ease,filter .16s ease}
+.link{width:100%;aspect-ratio:697/184;position:relative;display:flex;align-items:center;overflow:hidden;padding:0 7% 0 28%;border:0;border-radius:0;background:transparent;color:#fff;text-align:left;text-decoration:none;transition:filter .16s ease}
 .button-art{position:absolute;left:-12.91%;top:0;width:129.13%;max-width:none;height:auto;pointer-events:none}
 .button-menu .button-art{transform:translateY(-54.125%)}
 .button-whatsapp .button-art{transform:translateY(-68.3125%)}
 .button-instagram .button-art{transform:translateY(-82.125%)}
 .link::after{content:"";position:absolute;z-index:2;right:11%;top:50%;width:9px;height:9px;border-top:2px solid #fff;border-right:2px solid #fff;transform:translateY(-50%) rotate(45deg);opacity:.95}
 .link:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
-.link:hover{transform:translateY(-2px);filter:brightness(1.04)}.button-instagram::before{animation-delay:1.3s}
-.link::after{z-index:4}
-.icon{flex:0 0 43px;width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:#fff;color:var(--green-dark)}
-.icon svg{width:25px;height:25px;display:block}
-.instagram .icon{color:#d94572}
+.link:hover{filter:brightness(1.04)}
 .copy{position:relative;z-index:1;min-width:0;display:grid;gap:3px;padding-right:20px;text-shadow:0 1px 2px #31531b66}
 .copy strong{font-size:clamp(16px,4.3vw,19px);line-height:1.1}
 .copy small{font-size:12px;line-height:1.15;opacity:.94;overflow-wrap:anywhere}
-.arrow{margin-left:auto;font-size:24px;line-height:1;opacity:.85}
-.footer{margin:22px 0 0;font-size:12px;color:#676a62;line-height:1.4}
+.footer{margin:22px 0 0;font-size:12px;color:#4f574b;line-height:1.4}
 .footer b{color:var(--green-dark)}
 @media(max-width:360px){body{padding:0}.card{border-radius:0;min-height:100svh;box-shadow:none}.content{padding-left:18px;padding-right:18px}.logo-holder{width:142px;height:142px}}
-@media(max-height:700px) and (min-width:361px){body{align-items:flex-start;padding-top:12px;padding-bottom:12px}.card{min-height:0}.content{margin-top:-58px}.logo-holder{width:134px;height:134px}.tagline{margin-bottom:16px}.links{gap:10px}.icon{width:39px;height:39px;flex-basis:39px}.footer{margin-top:15px}}
-
-22%{opacity:.82}56%{left:112%;opacity:.62}63%,100%{left:112%;opacity:0}}
-22%{opacity:.85}58%{transform:translateX(230%) skewX(-22deg);opacity:.65}64%,100%{transform:translateX(230%) skewX(-22deg);opacity:0}}
-
+@media(max-height:700px) and (min-width:361px){body{align-items:flex-start;padding-top:12px;padding-bottom:12px}.card{min-height:0}.content{margin-top:-58px}.logo-holder{width:134px;height:134px}.tagline{margin-bottom:16px}.links{gap:10px}.footer{margin-top:15px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
@@ -56,7 +46,7 @@ h1{font-size:clamp(17px,4.8vw,21px);line-height:1.15;letter-spacing:.12em;font-w
     <h1>PALMAS · TO</h1>
     <p class="tagline">Ervas selecionadas <span>/ a granel</span></p>
     <nav class="links" aria-label="Acesse a Max Tereré">
-      <a class="link button-menu" href="https://maxaraujo1994-png.github.io/max-terere/" target="_blank" rel="noopener noreferrer" aria-label="Abrir cardápio digital"><img class="button-art" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg37QYTl0hWWFugFgOeZFmWQz90NW6tDzz76fB5gR8J9qVWw4ZZRuo1tMU5WXRcqym1rDlf_25ZXbfsZAHUuIHh8fBi6yZOpVwNwXtQ70rw3vXxv3cFGm89p8gal8Zq98njgkyC_3ShMMmLIH8NB506LJR_czEHkmECnIB9bKaydfQYE9cmApSQA5vnTz0/s1600/370139.png" alt=""><span class="copy"><strong>Cardápio digital</strong><small>Confira nossos produtos</small></span></a>
+      <a class="link button-menu" href="https://cardapio.maxterere.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir loja virtual"><img class="button-art" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg37QYTl0hWWFugFgOeZFmWQz90NW6tDzz76fB5gR8J9qVWw4ZZRuo1tMU5WXRcqym1rDlf_25ZXbfsZAHUuIHh8fBi6yZOpVwNwXtQ70rw3vXxv3cFGm89p8gal8Zq98njgkyC_3ShMMmLIH8NB506LJR_czEHkmECnIB9bKaydfQYE9cmApSQA5vnTz0/s1600/370139.png" alt=""><span class="copy"><strong>Loja virtual</strong><small>Confira nossos produtos</small></span></a>
       <a class="link button-whatsapp" href="https://wa.me/5563984140501" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp"><img class="button-art" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg37QYTl0hWWFugFgOeZFmWQz90NW6tDzz76fB5gR8J9qVWw4ZZRuo1tMU5WXRcqym1rDlf_25ZXbfsZAHUuIHh8fBi6yZOpVwNwXtQ70rw3vXxv3cFGm89p8gal8Zq98njgkyC_3ShMMmLIH8NB506LJR_czEHkmECnIB9bKaydfQYE9cmApSQA5vnTz0/s1600/370139.png" alt=""><span class="copy"><strong>WhatsApp</strong><small>1 atendente online</small></span></a>
       <a class="link button-instagram" href="https://www.instagram.com/maxterere_delivey/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram Max Tereré"><img class="button-art" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg37QYTl0hWWFugFgOeZFmWQz90NW6tDzz76fB5gR8J9qVWw4ZZRuo1tMU5WXRcqym1rDlf_25ZXbfsZAHUuIHh8fBi6yZOpVwNwXtQ70rw3vXxv3cFGm89p8gal8Zq98njgkyC_3ShMMmLIH8NB506LJR_czEHkmECnIB9bKaydfQYE9cmApSQA5vnTz0/s1600/370139.png" alt=""><span class="copy"><strong>Instagram</strong><small>visita nossa rede social</small></span></a>
     </nav>
